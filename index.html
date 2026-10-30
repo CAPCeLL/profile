@@ -374,7 +374,7 @@
     text-align: justify;
   }
 
-  .about-text p:first-child::first-letter {
+  .about-text > p:first-child::first-letter {
     font-family: 'Cormorant Garamond', serif;
     font-size: 72px;
     font-weight: 500;
@@ -391,31 +391,23 @@
 
   .pull-quote {
     margin: 56px 0;
-    padding: 40px 48px;
+    padding: 36px 40px;
     border-left: 3px solid var(--vermilion);
     background: rgba(184, 57, 42, 0.04);
-    position: relative;
-  }
-
-  .pull-quote::before {
-    content: "「";
-    position: absolute;
-    top: 8px;
-    left: 20px;
-    font-size: 48px;
-    color: var(--vermilion);
-    opacity: 0.4;
-    font-family: 'Shippori Mincho', serif;
   }
 
   .pull-quote p {
     font-family: 'Shippori Mincho', serif;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 1.9;
+    font-size: 21px;
+    line-height: 1.95;
     color: var(--ink);
     margin: 0;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
+    text-align: left;
+    text-indent: -0.5em;
+    padding-left: 0.5em;
+    word-break: auto-phrase;
   }
 
   .pull-quote .attribution {
